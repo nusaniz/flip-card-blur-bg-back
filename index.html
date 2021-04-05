@@ -1,0 +1,149 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background-image: url(https://www.nagarealm.com/wp-content/uploads/2020/04/PMPL-ID-2020-Season-1-Finals-Indozone.jpg);
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+        /* display: block; */
+        /* padding: 0.5rem; */
+    margin: 0 auto;
+      background-color: transparent;
+      width: 298px;
+      height: 198px;
+      /* border: 1px solid #f1f1f1; */
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .card-box-row {
+        /* margin: 0 auto; */
+        margin: 0 auto 2.5rem auto;
+        /* border: 1px solid; */
+        max-width: 600px;
+        display: flex;
+        /* margin: 0 0 1.5rem 0; */
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+      /* padding: 0.5rem; */
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      /* background-color: #bbb; */
+      /* color: black; */
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .tengah {
+        margin: 0 auto;
+        /* padding: 1rem; */
+        /* border: 1px solid yellow; */
+    }
+    </style>
+    
+<body>
+    <div class="tengah">
+        <div class="card-box-row">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="flip front.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="flip back.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="flipp front.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="flipp back.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="card-box-row">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="flipp_0004_zuxxy-front.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="flipp_0005_zuxxy-back.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                </div>
+              </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="flipp_0006_luxxy-front.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="flipp_0007_luxxy-back.png" alt="Avatar" style="width:298px;height:198px;">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>    
+
+
+
+
+
+    
+    
